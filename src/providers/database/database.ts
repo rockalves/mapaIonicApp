@@ -6,7 +6,7 @@ import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 export class DatabaseProvider {
 
   constructor(private sqlite: SQLite) { }
-
+//cria o banco caso nao exista
   public getDB() {
     return this.sqlite.create({
       name: 'products.db',
